@@ -1,0 +1,62 @@
+.searchBarContainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .searchBarContainer {
+    width: 40%;
+  }
+}
+.searchBar {
+  width: 100%;
+  border: 1px solid #44000088;
+  color: #440000;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.btnCategoriesContainer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.btnCategories {
+  text-decoration: none;
+  background: #440000;
+  font-size: 15px;
+  color: white;
+  border: 0px;
+  margin: 0 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btnCategories:hover {
+  background-color: #913c3c;
+}
+.activeCategory {
+  background-color: #913c3c;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+.pageShoweb {
+  margin-bottom: 0;
+}
+.buttonNavigationDrinks {
+  border: none;
+  border-radius: 50%;
+}

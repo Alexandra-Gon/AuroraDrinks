@@ -1,0 +1,27 @@
+.footer {
+  background-color: #440000;
+}
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.footerText {
+  color: rgb(231, 230, 230);
+  text-align: center;
+  align-items: center;
+  margin-bottom:0;
+  padding-bottom: 10px ;
+}
+.footerIcons {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logoFooter{
+  width: 150px;
+}

@@ -1,0 +1,23 @@
+.cocktailCard {
+  text-align: center;
+  border: 1px solid rgba(236, 229, 229, 0.966);
+  box-shadow: 0px 3px 13px 1px rgb(236, 229, 229);
+  border-radius: 15px;
+  width: 300px;
+  height: 370px;
+  margin: 40px;
+  text-decoration: none;
+}
+.cardImage {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.cardName {
+  color: #122348;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.cardText {
+  color: black;
+}

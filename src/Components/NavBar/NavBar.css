@@ -1,0 +1,19 @@
+.link {
+    list-style: none;
+    display: inline;
+    margin-right: 50px;   
+}
+
+.logo {
+    /* height: 100px; */
+    width: 250px;
+}
+
+.cartWidget {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-align: center;
+ }
+
+

@@ -1,0 +1,11 @@
+.drinksContainer{
+    margin: 50px auto;
+    min-height: 80vh;
+}
+
+.drinksTitle {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+}
