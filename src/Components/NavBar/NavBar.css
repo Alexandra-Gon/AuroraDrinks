@@ -1,19 +1,32 @@
-.link {
-    list-style: none;
-    display: inline;
-    margin-right: 50px;   
+.navBar {
+    background-color: #440000;
 }
-
+.navBarContainer {
+    width: 80%;
+    margin: 0 auto;
+}
 .logo {
-    /* height: 100px; */
     width: 250px;
 }
+.logoAndTextNavbar {
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.linkNavbarContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+}
+.linkNavbar {
+    color: white;
+    text-decoration: none;
+}
 
-.cartWidget {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  text-align: center;
- }
+
+
 
 

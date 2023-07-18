@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="footerText">
-        Privacy Policy Terms of Service Copyright Policy
+       ALEXANDRA GONZALEZ ©2023
       </p>
     </div>
   );
