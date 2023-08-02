@@ -8,7 +8,7 @@ const BlogPage = () => {
         <div className="blogContainer1">
           <img
             className="blogImg"
-            src={require("../../Img/imgBlog1.jpg")}
+            src={require("../../Img/imgBlog1.webp")}
             alt="cocktails"
           />
           <p className="blogText">
@@ -64,7 +64,7 @@ const BlogPage = () => {
           </p>
           <img
             className="blogImg"
-            src={require("../../Img/imgBlog2.jpg")}
+            src={require("../../Img/imgBlog2.webp")}
             alt="old cocktail photo"
           />
         </div>

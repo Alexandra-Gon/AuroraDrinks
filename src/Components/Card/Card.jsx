@@ -1,12 +1,10 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
-import { DrinksContext } from "../Context/drinksContext";
-import { useContext } from "react";
+// import { DrinksContext } from "../Context/drinksContext";
+// import { useContext } from "react";
 
 const Card = ({ data }) => {
-
-
-  const { counter, setCounter } = useContext(DrinksContext); 
+  // const { counter, setCounter } = useContext(DrinksContext); 
 
   return (
     <div className="cocktailCard">

@@ -1,5 +1,5 @@
 .searchBarContainer {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -32,6 +32,8 @@
 .btnCategories {
   text-decoration: none;
   background: #440000;
+  width: 120px;
+  height: 40px;
   font-size: 15px;
   color: white;
   border: 0px;

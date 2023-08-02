@@ -6,7 +6,7 @@ const NavBar = () => {
     <header className="navBar">
       <div className="navBarContainer">
       <div className="logoAndTextNavbar">
-        <Link>
+        <Link to="/">
           <img
             className="logo"
             src={require("../../Img/logo.png")}
@@ -14,8 +14,7 @@ const NavBar = () => {
           />
         </Link>
         <p>
-          <br /> The art of making beverages full of life | Expression - Taste -
-          Life | High-quality beverages
+          The art of making beverages full of life | Expression - Taste - Life | High-quality beverages
         </p>
       </div>
       <nav>

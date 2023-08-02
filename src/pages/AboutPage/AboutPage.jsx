@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="aboutImgText">
         <img
           className="aboutImg"
-          src={require("../../Img/imgAbout.jpg")}
+          src={require("../../Img/imgAbout.webp")}
           alt="Preparing cocktails"
         />
         <p className="aboutText">

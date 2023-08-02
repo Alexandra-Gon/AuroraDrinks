@@ -1,32 +1,45 @@
 .navBar {
-    background-color: #440000;
+  background-color: #440000;
 }
 .navBarContainer {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
-    width: 250px;
+  width: 150px;
+  margin-top: 20px;
 }
 .logoAndTextNavbar {
-    color: white;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.linkNavbarContainer {
-    padding: 10px;
+@media (min-width: 480px) {
+  .logoAndTextNavbar {
+    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    gap: 20px;
+    justify-content: left;
+    align-items: center;
+  }
+}
+.logoAndTextNavbar p {
+  text-align: center;
+}
+
+.linkNavbarContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 20px;
 }
 .linkNavbar {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-
-
-
-
-

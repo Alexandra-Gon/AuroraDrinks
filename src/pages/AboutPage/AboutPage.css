@@ -1,6 +1,7 @@
 .aboutContainer {
   margin: 50px auto;
   width: 80%;
+  min-height: 80vh;
 }
 .aboutTittle {
   text-align: center;

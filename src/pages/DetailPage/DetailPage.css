@@ -1,6 +1,5 @@
 .containerDrink {
-  min-height: 40vh;
-  /* padding: 30px; */
+  min-height: 60vh;
   width: 80%;
   border-top: 1px solid rgba(236, 229, 229, 0.966);
   border-bottom: 1px solid rgba(236, 229, 229, 0.966);
@@ -8,6 +7,8 @@
 }
 @media (min-width: 1200px) {
   .containerDrink {
+    /* min-height: 80vh; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     gap: 80px;

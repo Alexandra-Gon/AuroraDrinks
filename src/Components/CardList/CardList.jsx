@@ -12,7 +12,7 @@ const CardList = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredObjects, setFilteredObjects] = useState([]);
 
-  console.log(drinks);
+  // console.log(drinks);
   useEffect(() => {
     axios(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${categoryDrink}`
@@ -55,7 +55,7 @@ const CardList = () => {
     return null;
   } else {
     return (
-      <div>
+      <>
         <div className="searchBarContainer">
           <input
             className="searchBar"
@@ -65,6 +65,7 @@ const CardList = () => {
             placeholder="Search your drink..."
           />
         </div>
+
         <div className="btnCategoriesContainer">
           <button
             className={
@@ -109,61 +110,58 @@ const CardList = () => {
         </div>
         <div className="cardList">
           {filteredObjects.slice(numDrinks, numDrinks + 10).map((drink) => {
-            return (
-              <div key={drink.idDrink}>
-                <Card data={drink} />
-              </div>
-            );
+            return <Card key={drink.idDrink} data={drink} />
           })}
         </div>
 
-
-
-        {Math.ceil(filteredObjects.length / 10) > 1 && <div className="navigation">
-          <button
-            className="buttonNavigationDrinks"
-            onClick={previusCoctailsPage}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-caret-left"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="#2c3e50"
-              fill="none"
-              strokeLinecap="round"
+        {Math.ceil(filteredObjects.length / 10) > 1 && (
+          <div className="navigation">
+            <button
+              className="buttonNavigationDrinks"
+              onClick={previusCoctailsPage}
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M14 6l-6 6l6 6v-12" />
-            </svg>
-          </button>
-          <p className="pageShoweb">{pageShowed}</p>/
-          <p className="pageShoweb">
-            <b>{Math.ceil(filteredObjects.length / 10)}</b>
-          </p>
-          <button className="buttonNavigationDrinks" onClick={nextCoctailsPage}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-caret-right"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="#2c3e50"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-caret-left"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                strokeLinecap="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 6l-6 6l6 6v-12" />
+              </svg>
+            </button>
+            <p className="pageShoweb">{pageShowed}</p>/
+            <p className="pageShoweb">
+              <b>{Math.ceil(filteredObjects.length / 10)}</b>
+            </p>
+            <button
+              className="buttonNavigationDrinks"
+              onClick={nextCoctailsPage}
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M10 18l6 -6l-6 -6v12" />
-            </svg>
-          </button>
-        </div>}
-
-
-      </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-caret-right"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 18l6 -6l-6 -6v12" />
+              </svg>
+            </button>
+          </div>
+        )}
+      </>
     );
   }
 };
